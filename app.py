@@ -240,8 +240,8 @@ if predict:
 
     placed_probability = probability[1] * 100
 
-    result = encoders["Placement"].inverse_transform([prediction])[0]
-
+    result = "Yes" if prediction == 1 else "No"
+    
     st.divider()
 
     if result == "Yes":
